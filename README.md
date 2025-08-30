@@ -36,33 +36,38 @@ Feelings simply are measurable as scalar values from 0 to 100 in general.
 Some Feelings and their general descriptions.
 * Hunger: Correlated with Satiation. Tends to motivate thoughts to eat. 
 * Thirst: Correlated with Hydration. Tends to motivate thoughts to drink. 
-* Exhaustion: Correlated with Energy. Tends to increase Unwillingness and thoughts to rest. Creates visual changes in the darkness of eye-circles.
+* Exhaustion: Correlated with Energy. Tends to increase Unwillingness and thoughts to rest. Creates visual changes in the darkness of eye-circles. 
 * Sleepiness: Can be caused by low Energy. Tends to motivate thoughts to sleep and unlocks some special interactions. Creates visual changes in drooping eyes. 
-* Discomfort: Correlated with Comfort. Usually creates thoughts that increase emotions like Distraction, and motivates thoughts to increase Comfort
+* Discomfort: Correlated with Comfort. Usually creates thoughts that increase emotions like Distraction, and motivates thoughts to increase Comfort. 
 * Illness: Correlated with Health. Usually creates thoughts that increase emotions like Distraction and Stress, and motivates thoughts to increase Health
-* Pain: Produced by certain environmental health damages. Usually creates Thoughts that decrease emotions like Happiness, increase emotions like Fear, Distraction, Discomfort, and motivates thoughts to decrease pain. Creates visual changes in the furrowing of the brow and some facial expressions.
+* Pain: Produced by certain environmental health damages. Usually creates Thoughts that decrease emotions like Happiness, increase emotions like Fear, Distraction, Discomfort, and motivates thoughts to decrease pain. Creates visual changes in the furrowing of the brow and some facial expressions. 
 * Pleasure: Produced by certain environmental stimuli. Usually creates Thoughts that increase emotions like Happiness, and motivates thoughts to derive more pleasure. Creates visual changes in some facial expressions.
-* Happiness: Produced by various Thoughts. Generally decreases Unwillingness and Stress and things associated with this feeling tend to be prioritized. Creates visual changes in some facial expressions
-* Sadness: Produced by various Thoughts. Generally increases Unwillingness and things associated with this feeling get deprioritized. Also motivates Thoughts to end the sadness. Creates visual changes in some facial expressions
-* Fear: Produced by various Thoughts. Generally motivates Thoughts of fleeing and avoidance. Creates visual changes in some facial expressions
+* Happiness: Produced by various Thoughts. Generally decreases Unwillingness and Stress and Topics associated with this feeling tend to be prioritized in selections. Creates visual changes in some facial expressions
+* Discontent: Produced by various Thoughts. Generally alike to Discomfort. Topics with this feeling tend to be deprioritized in selections.
+* Satisfaction: Produced by various Thoughts. Generally alike to Happiness, but also decreases Frustration, Distraction, and Anger. Topics with this feeling tend to be prioritized in selections.
+* Sadness: Produced by various Thoughts. Generally increases Unwillingness and Topics associated with this feeling get deprioritized. Also motivates Thoughts to end the sadness. Creates visual changes in some facial expressions
+* Fear: Produced by various Thoughts. Generally motivates Thoughts of fleeing and avoidance. Creates visual changes in some facial expressions. Topics with this feeling tend to be physically avoided and deprioritized.
 * Guilt: Produced by various Thoughts. Generally increases varying emotions depending on personality traits, and motivates Thoughts of absolving guilt.
-* Anger: Produced by various Thoughts. Generally motivates Thoughts of acting on the anger. Creates visual changes in some facial expressions
-* Frustration: Produced by various Thoughts. Generally motivates Thoughts of stopping actions and increases Anger.
-* Confusion: Produced by various Thoughts. Generally motivates Thoughts trying to reconcile the confusion, and can motivate Thoughts that increase Stress. Creates visual changes in some facial expressions
-* Stress: Produced by various Thoughts. Causes Thoughts with positive emotions to have much of their emotional significance negated, and increases the effects of thoughts of negative emotions. Also motivates thoughts to decrease stress. Creates visual changes in furrowing of brow and other visual properties.
-* Distraction: Produced by various Thoughts. Causes Thoughts to get deleted randomly more often.
-* Unwillingness: Produced by various Thoughts. Causes actions to be less likely to be taken.
-* Shyness: Produced by various Thoughts. Mainly causes certain actions to play out differently. Creates visual changes in some facial expressions and such and blushyness(?).
-* Care: Produced by some Thoughts. Generally increases Happiness and motivates Thoughts about doing caring actions toward someone.
-* Attraction: Produced by various environmental stimuli. Generally motivates Thoughts about the attraction, and thoughts aimed toward acting on the attraction, as well as a general increase in Distraction. Creates visual changes in blushyness(?)
-* Embarrassment: Produced by various Thoughts. Generally decreases Happiness, increases Unwillingness, Awkwardness, and motivates thoughts about avoiding social interaction. Creates visual changes in blushyness(?). Embarrassment + Frustration creates a pouty facial expression(?)
-* Awkwardness: Produced by various Thoughts. Generally increases Distraction, and motivates thoughts about exiting the current situation in some way. Creates visual changes in some facial expressions
-* Disgust: Produced by various Thoughts. Generally decreases happiness and motivates thoughts of avoidance of the cause(s) of disgust. Creates visual changes in some facial expressions
-* Shame: Produced by various Thoughts. Generally decreases happiness and increases Embarrassment and motivates thoughts of
-* Suspicion: Produced by some Thoughts. Generally causes future Thoughts about what [T1] says to be marked as Dubious, or a Lie if Suspicion is high.
+* Anger: Produced by various Thoughts. Generally motivates Thoughts of acting on the anger. Creates visual changes in some facial expressions. Can motivate thoughts about causing actions that damage or destroy Topics associated with this feeling
+* Frustration: Produced by various Thoughts. Generally motivates Thoughts of stopping actions and increases Anger. Topics with this feeling tend to be deprioritized.
+* Confusion: Produced by various Thoughts. Generally motivates Thoughts trying to reconcile the confusion, and can motivate Thoughts that increase Stress. Creates visual changes in some facial expressions. 
+* Stress: Produced by various Thoughts. Causes Thoughts with positive emotions to have much of their emotional significance negated, and increases the effects of thoughts of negative emotions. Also motivates thoughts to decrease stress. Creates visual changes in furrowing of brow and other visual properties. Topics associated with this feeling may be deprioritized or avoided.
+* Distraction: Produced by various Thoughts. Causes Thoughts to get deleted randomly more often. Topics associated with this feeling will be deprioritized when Deference is high.
+* Deference: Produced by Thoughts, usually associated with certain Rules or Topics. Topics associated with this feeling will be prioritized in truthfulness and Must-do Thoughts.
+* Contempt: Produced by Thoughts, usually associated with certain Rules or Topics. Topics associated with this feeling will be deprioritized in truthfulness and Must-do Thoughts.
+* Unwillingness: Produced by various Thoughts. Causes actions to be less likely to be taken. 
+* Shyness: Produced by various Thoughts. Mainly causes certain actions to play out differently and be less likely. Creates visual changes in some facial expressions and such and blushyness(?). 
+* Care: Produced by some Thoughts. Generally increases Happiness and motivates Thoughts about doing caring actions toward someone. Topics associated with Care will be heavily prioritized.
+* Attraction: Produced by various environmental stimuli. Generally motivates Thoughts about the attraction, and thoughts aimed toward acting on the attraction, as well as a general increase in Distraction. Creates visual changes in blushyness(?). Topics associated with Attraction will be sought out rather than avoided, and may be prioritized.
+* Embarrassment: Produced by various Thoughts. Generally decreases Happiness, increases Unwillingness, Awkwardness, and motivates thoughts about avoiding social interaction. Creates visual changes in blushyness(?). Embarrassment + Frustration creates a pouty facial expression(?). Topics associated with Embarrassment will be avoided.
+* Awkwardness: Produced by various Thoughts. Generally increases Distraction, and motivates thoughts about exiting the current situation in some way. Creates visual changes in some facial expressions. Topics associated with this feeling will be avoided.
+* Disgust: Produced by various Thoughts. Generally decreases happiness and motivates thoughts of avoidance of the cause(s) of disgust. Creates visual changes in some facial expressions. Topics associated with this feeling will be avoided.
+* Shame: Produced by various Thoughts. Generally decreases happiness and increases Embarrassment and increases Deference
+* Suspicion: Produced by some Thoughts. Generally causes future Thoughts about what Topic says to be marked as Dubious, or a Lie if Suspicion is high.
 * Amusement: Produced by various Thoughts. Generally increases Happiness and decreases Stress, and motivates Thoughts about laughing, as well as a change in dialogue style.
-* Uncertainty: Produced by various Thoughts, typically ones that suggest a Concept is or isn't real, in a way conflicting with earlier beliefs. Generally increases Stress and Confusion. Motivates thoughts about realness.
-* Wonder: Produced by various Thoughts. Generally increases Happiness and motivates thoughts about witnessing and enforces realness
+* Uncertainty: Produced by various Thoughts, typically ones that suggest a Concept is or isn't real, in a way conflicting with earlier beliefs. Generally increases Stress and Confusion. Motivates thoughts about realness. 
+* Disappointment: Produced by various Thoughts, typically ones about Rules. Topics associated with this emotion are more often avoided or receive fewer positive actions.
+* Wonder: Produced by various Thoughts. Generally increases Happiness and motivates thoughts about witnessing and enforces realness. Topics associated with this emotion may be sought greatly and prioritized .
 * Strangeness: Generally created by circumstances associated with supernaturally induced feelings. 
 *
 
@@ -78,13 +83,18 @@ A *Metathought* is a special kind of Thought that is about another Thought. Meta
 All thoughts are generated with randomness and different weights based on personality traits, but before being deployed in the mind they check conditions to determine if they are appropriate. If not, they are not deployed in the mind.
 
 #### Types of Thoughts
-* [T1] feels <feeling>: If feelings of Care about this individual are high or the Empathy trait is High, increments the <feeling> in the thought.
+* [T1] feels <feeling>: If feelings of Care about this individual are high or the Empathy trait is High, increments the <feeling> in the thought. Some feelings will motivate different feelings depending on Cause, e.g. if X feels Contempt and it's caused by something I did, then a feeling of Anger might happen instead.
 * [T1] is no longer feeling <emotion>: If feelings of Care about this individual are high or the Empathy trait is High, decrements the <feeling> in the thought.
 * [A1] did <action>: Feeling depends on action and Traits
 * [A1] did <action> to [P1], [P2],...: Feeling depends on action and Traits and Rules, and Relationship-Memory to [A1], [P1], [P2]...
 * <Action> happened among [T1], [T2], [T3]...: Feeling depends on action and Traits and Rules and Relationship-Memory
 * [A1] did <action> using [I1]: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
 * [A1] did <action> using [I1] to [P1], [P2]...: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
+* I must do <action>: Feeling depends on feelings toward Source and action 
+* I must do <action> to [P1], [P2],...: Same
+* I must do <action> with [T1], [T2]...: Same
+* I must do <action> using [I1]: Same
+* I must do <action> using [I1] to [P1], [P2]...: Same
 * [A1] said <simple-statement> about [T1], [T2]...: Feeling depends on simple-statement and Traits and Rules and Relatitonship-Memory.
 * Conversation happened among [T1], [T2]...: Feeling depends on conversation and Traits and Rules and Relatitonship-Memory.
 * [T1] is <status>: Feeling depends on status and Relationship-Memory to [T1] and Traits
@@ -99,9 +109,10 @@ All thoughts are generated with randomness and different weights based on person
 * [T1] is lying: Feeling depends on Relationship-Memory to [T1] and Traits
 * [T1] is telling the truth: Feeling depends on Relationship-Memory to [T1] and Traits
 * I care for [T1]: Generates feeling of Care
-* [A1] is satisfying <need>:
-* [A1] is following <rule>:
-* [A1] ignored <rule>:
+* My <need> is satisfied: Generates feeling of Satisfaction
+* My <need> is worsened: Generates feeling of Discontent
+* [A1] is following <rule>: (same)
+* [A1] ignored <rule>: Emotion produced
 * [T1] can ignore <rule>:
 * I must stop following <rule>:
 * I must start following <rule>:
@@ -112,6 +123,7 @@ All thoughts are generated with randomness and different weights based on person
 * [T1] doesn't know what [T2] is:
 * [A1] manifested at [C1]:
 * [A1] vanished from [C1]:
+* [T1] is a figure of authority: Generates deference, depends on Traits
 * 
 
 ##### Metathoughts
@@ -177,6 +189,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

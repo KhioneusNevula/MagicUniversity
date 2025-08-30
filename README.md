@@ -29,7 +29,7 @@ Some Needs and their general descriptions:
 
 ### Feelings
 Feelings are basic environmental circumstances in a character that affect how they think and act, reducing or increasing the likelihoods of certain kinds of actions. 
-Feelings simply are measurable as scalar values from 0 to 100.
+Feelings simply are measurable as scalar values from 0 to 100 in general.
 
 Some Feelings and their general descriptions.
 * Hunger: Correlated with Satiation. Tends to motivate thoughts to eat.
@@ -42,15 +42,16 @@ Some Feelings and their general descriptions.
 * Happiness: Produced by various Thoughts. Generally decreases Unwillingness and Stress and things associated with this feeling tend to be prioritized.
 * Sadness: Produced by various Thoughts. Generally increases Unwillingness and things associated with this feeling get deprioritized. Also motivates Thoughts to end the sadness.
 * Fear: Produced by various Thoughts. Generally motivates Thoughts of fleeing and avoidance.
-* Guilt: Produced by various Thoughts
-* Anger: Produced by various Thoughts
-* Frustration: Produced by various Thoughts
-* Confusion: Produced by various Thoughts
-* Stress: Produced by various Thoughts
-* Distraction: Produced by various Thoughts
-* Unwillingness: Produced by various Thoughts
-* Shyness: Produced by various Thoughts
-* Romance: Produced by various Thoughts
+* Guilt: Produced by various Thoughts. Generally increases varying emotions depending on personality traits, and motivates Thoughts of absolving guilt.
+* Anger: Produced by various Thoughts. Generally motivates Thoughts of acting on the anger.
+* Frustration: Produced by various Thoughts. Generally motivates Thoughts of stopping actions and damaging existing works.
+* Confusion: Produced by various Thoughts. Generally motivates Thoughts trying to reconcile the confusion, and can motivate Thoughts that increase Stress
+* Stress: Produced by various Thoughts. Causes Thoughts with positive emotions to have much of their emotional significance negated, and increases the effects of thoughts of negative emotions. Also motivates thoughts to decrease stress.
+* Distraction: Produced by various Thoughts. Causes Thoughts to get deleted randomly more often.
+* Unwillingness: Produced by various Thoughts. Causes actions to be less likely to be taken.
+* Shyness: Produced by various Thoughts. Mainly causes certain actions to play out differently.
+* Romance: Produced by various Thoughts. Generally increases Happiness and motivates Thoughts about the romance
+* Attraction: Produced by various environmental stimuli. Generally motivates Thoughts about the attraction, and thoughts aimed toward acting on the attraction, as well as a general increase in Distraction.
 * Embarrassment: Produced by various Thoughts
 * Awkwardness: Produced by various Thoughts
 * Disgust: Produced by various Thoughts
@@ -79,6 +80,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

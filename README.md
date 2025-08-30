@@ -8,12 +8,30 @@ Characters are the autonomous inhabitants of the magic university.
 Characters have Avatars, which are their physical presence in the game. Most Avatars are moving bodies with physical needs, 
 though perhaps a few Characters will have Avatars that do not function like this, e.g. something like a sentient personification of the University's walls, or ghosts.
 
-Characters' minds are composed of Feelings, Thoughts, Actions, and Memories (FTAM).
-The Environment can produce Thoughts. Thoughts can produce Feelings, and Feelings can produce new Thoughts. Thoughts can produce Memories, and Memories can produce Thoughts. Thoughts can produce Actions.
+Characters' minds are composed of Needs, Feelings, Thoughts, Actions, Memories, and Personality Traits. (NFTAMP).
+Personality Traits are created into the Character. Needs are uncreated and change by the Environment. The Environment can produce Thoughts. Needs can produce Feelings. Thoughts can produce Feelings, and Feelings can produce new Thoughts. Thoughts can produce Memories, and Memories can produce Thoughts. Thoughts can produce Actions. Memories can change Personality Traits.
+
+### Needs
+Needs are basic inherent things the Character keeps track of and which produce Feelings. They are scalar values from 0 to 100. As they get lower, they increase certain Feelings. Some Needs are listed as Mortal, meaning a Character will prioritize them far more than other Needs. Non-mortal Needs can be affected by Personality Traits, which may decrease or increase their thresholds for making Feelings.
+
+Some Needs and their general descriptions:
+* Breath (Mortal): The need for a Character's Avatar to breathe
+* Hydration (Mortal): The need for a Character's Avatar to drink water
+* Satiation (Mortal): The need for a Character's Avatar to eat food
+* Energy (Mortal): The need for a Character's Avatar to sleep.
+* Health (Mortal): The need for a Character's Avatar to be unwounded and not sick.
+* Shelter: The need for a Character's Avatar to not be susceptible to the elements.
+* Comfort: The need for a Character's Avatar to be comfortable.
+* Pleasure: The need for a Character's Avatar to be enjoying, in the sense not feeling pain and eating or feeling sensations they like.
+* Connection: The need for a Character to have social relationships
+* Love: The need for a Character to be loved.
+* 
 
 ### Feelings
 Feelings are basic environmental circumstances in a character that affect how they think and act, reducing or increasing the likelihoods of certain kinds of actions. 
 Feelings simply are measurable as scalar values from 0 to 100.
+
+Some Feelings and their general descriptions.
 
 ### Thoughts
 
@@ -21,9 +39,10 @@ Feelings simply are measurable as scalar values from 0 to 100.
 
 ### Memories
 
+### Personality Traits
 
 
-### Living Characters
+### Avatars
 
 
 ## University
@@ -35,3 +54,4 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+

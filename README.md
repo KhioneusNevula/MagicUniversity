@@ -25,13 +25,14 @@ Some Needs and their general descriptions:
 * Pleasure: The need for a Character's Avatar to be enjoying, in the sense not feeling pain and eating or feeling sensations they like.
 * Connection: The need for a Character to have social relationships
 * Love: The need for a Character to be loved.
-* 
+* Purpose: The need for a Character to understand what they are doing.
 
 ### Feelings
 Feelings are basic environmental circumstances in a character that affect how they think and act, reducing or increasing the likelihoods of certain kinds of actions. 
 Feelings simply are measurable as scalar values from 0 to 100.
 
 Some Feelings and their general descriptions.
+* 
 
 ### Thoughts
 
@@ -54,4 +55,5 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 

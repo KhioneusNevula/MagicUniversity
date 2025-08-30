@@ -83,7 +83,7 @@ A *Metathought* is a special kind of Thought that is about another Thought. Meta
 All thoughts are generated with randomness and different weights based on personality traits, but before being deployed in the mind they check conditions to determine if they are appropriate. If not, they are not deployed in the mind.
 
 #### Types of Thoughts
-* [T1] feels \\<feeling>: If feelings of Care about this individual are high or the Empathy trait is High, increments the \<feeling> in the thought. Some feelings will motivate different feelings depending on Cause, e.g. if X feels Contempt and it's caused by something I did, then a feeling of Anger might happen instead.
+* [T1] feels \<feeling>: If feelings of Care about this individual are high or the Empathy trait is High, increments the \<feeling> in the thought. Some feelings will motivate different feelings depending on Cause, e.g. if X feels Contempt and it's caused by something I did, then a feeling of Anger might happen instead.
 * [T1] is no longer feeling \<emotion>: If feelings of Care about this individual are high or the Empathy trait is High, decrements the \<feeling> in the thought.
 * [A1] did \<action>: Feeling depends on action and Traits
 * [A1] did \<action> to [P1], [P2],...: Feeling depends on action and Traits and Rules, and Relationship-Memory to [A1], [P1], [P2]...
@@ -214,6 +214,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

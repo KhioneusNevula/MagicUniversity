@@ -32,32 +32,30 @@ Feelings are basic environmental circumstances in a character that affect how th
 Feelings simply are measurable as scalar values from 0 to 100 in general.
 
 Some Feelings and their general descriptions.
-* Hunger: Correlated with Satiation. Tends to motivate thoughts to eat.
-* Thirst: Correlated with Hydration. Tends to motivate thoughts to drink.
-* Exhaustion: Correlated with Energy. Tends to motivate thoughts to sleep.
+* Hunger: Correlated with Satiation. Tends to motivate thoughts to eat. 
+* Thirst: Correlated with Hydration. Tends to motivate thoughts to drink. 
+* Exhaustion: Correlated with Energy. Tends to motivate thoughts to sleep. Creates visual changes in the darkness of eye-circles.
 * Discomfort: Correlated with Comfort. Usually creates thoughts that increase emotions like Distraction, and motivates thoughts to increase Comfort
 * Illness: Correlated with Health. Usually creates thoughts that increase emotions like Distraction and Stress, and motivates thoughts to increase Health
-* Pain: Produced by certain environmental health damages. Usually creates Thoughts that decrease emotions like Happiness, increase emotions like Fear, Distraction, Discomfort, and motivates thoughts to decrease pain.
-* Pleasure: Produced by certain environmental stimuli. Usually creates Thoughts that increase emotions like Happiness, and motivates thoughts to derive more pleasure.
-* Happiness: Produced by various Thoughts. Generally decreases Unwillingness and Stress and things associated with this feeling tend to be prioritized.
-* Sadness: Produced by various Thoughts. Generally increases Unwillingness and things associated with this feeling get deprioritized. Also motivates Thoughts to end the sadness.
-* Fear: Produced by various Thoughts. Generally motivates Thoughts of fleeing and avoidance.
+* Pain: Produced by certain environmental health damages. Usually creates Thoughts that decrease emotions like Happiness, increase emotions like Fear, Distraction, Discomfort, and motivates thoughts to decrease pain. Creates visual changes in the furrowing of the brow and some facial expressions.
+* Pleasure: Produced by certain environmental stimuli. Usually creates Thoughts that increase emotions like Happiness, and motivates thoughts to derive more pleasure. Creates visual changes in some facial expressions.
+* Happiness: Produced by various Thoughts. Generally decreases Unwillingness and Stress and things associated with this feeling tend to be prioritized. Creates visual changes in some facial expressions
+* Sadness: Produced by various Thoughts. Generally increases Unwillingness and things associated with this feeling get deprioritized. Also motivates Thoughts to end the sadness. Creates visual changes in some facial expressions
+* Fear: Produced by various Thoughts. Generally motivates Thoughts of fleeing and avoidance. Creates visual changes in some facial expressions
 * Guilt: Produced by various Thoughts. Generally increases varying emotions depending on personality traits, and motivates Thoughts of absolving guilt.
-* Anger: Produced by various Thoughts. Generally motivates Thoughts of acting on the anger.
-* Frustration: Produced by various Thoughts. Generally motivates Thoughts of stopping actions and damaging existing works.
-* Confusion: Produced by various Thoughts. Generally motivates Thoughts trying to reconcile the confusion, and can motivate Thoughts that increase Stress
-* Stress: Produced by various Thoughts. Causes Thoughts with positive emotions to have much of their emotional significance negated, and increases the effects of thoughts of negative emotions. Also motivates thoughts to decrease stress.
+* Anger: Produced by various Thoughts. Generally motivates Thoughts of acting on the anger. Creates visual changes in some facial expressions
+* Frustration: Produced by various Thoughts. Generally motivates Thoughts of stopping actions and increases Anger.
+* Confusion: Produced by various Thoughts. Generally motivates Thoughts trying to reconcile the confusion, and can motivate Thoughts that increase Stress. Creates visual changes in some facial expressions
+* Stress: Produced by various Thoughts. Causes Thoughts with positive emotions to have much of their emotional significance negated, and increases the effects of thoughts of negative emotions. Also motivates thoughts to decrease stress. Creates visual changes in furrowing of brow and other visual properties.
 * Distraction: Produced by various Thoughts. Causes Thoughts to get deleted randomly more often.
 * Unwillingness: Produced by various Thoughts. Causes actions to be less likely to be taken.
-* Shyness: Produced by various Thoughts. Mainly causes certain actions to play out differently.
-* Romance: Produced by various Thoughts. Generally increases Happiness and motivates Thoughts about the romance
-* Attraction: Produced by various environmental stimuli. Generally motivates Thoughts about the attraction, and thoughts aimed toward acting on the attraction, as well as a general increase in Distraction.
-* Embarrassment: Produced by various Thoughts. Generally decreases Happiness, increases Unwillingness, Awkwardness, and motivates thoughts about avoiding social interaction.
-* Awkwardness: Produced by various Thoughts. Generally increases Distraction, and motivates thoughts about exiting the current situation in some way.
-* Disgust: Produced by various Thoughts. Generally decreases happiness and motivates thoughts of avoidance of the cause(s) of disgust.
+* Shyness: Produced by various Thoughts. Mainly causes certain actions to play out differently. Creates visual changes in some facial expressions and such.
+* Romance: Produced by various Thoughts. Generally increases Happiness and motivates Thoughts about the romance. Creates visual changes in blushyness(?)
+* Attraction: Produced by various environmental stimuli. Generally motivates Thoughts about the attraction, and thoughts aimed toward acting on the attraction, as well as a general increase in Distraction. Creates visual changes in blushyness(?)
+* Embarrassment: Produced by various Thoughts. Generally decreases Happiness, increases Unwillingness, Awkwardness, and motivates thoughts about avoiding social interaction. Creates visual changes in blushyness(?). Embarrassment + Frustration creates a pouty facial expression(?)
+* Awkwardness: Produced by various Thoughts. Generally increases Distraction, and motivates thoughts about exiting the current situation in some way. Creates visual changes in some facial expressions
+* Disgust: Produced by various Thoughts. Generally decreases happiness and motivates thoughts of avoidance of the cause(s) of disgust. Creates visual changes in some facial expressions
 * Shame: Produced by various Thoughts. Generally decreases happiness and increases Embarrassment and motivates thoughts of 
-* 
-* 
 
 ### Thoughts
 
@@ -80,6 +78,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

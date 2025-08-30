@@ -58,10 +58,17 @@ Some Feelings and their general descriptions.
 * Shame: Produced by various Thoughts. Generally decreases happiness and increases Embarrassment and motivates thoughts of 
 
 ### Thoughts
+Thoughts come in different basic kinds, and they have an associated Feeling (or set thereof) that they are expected to create. They are also temporary, except when they create memories. Thoughts can have Topics, which are Characters and objects.
 
 ### Actions
 
 ### Memories
+Memories are stored Thoughts, and can be periodically recalled, causing the emotions in their thought to surface again.
+Memories are stored with links to their Topics, so that a Topic can be used to access a memory about it. 
+
+Memories have *Salience* which determines whether they are accessed earlier or later in relation to their topic. Salience is determined largely by the strength of the emotion associated with the Topic, as well as with the general Salience stat of the type of thought itself.
+
+Relationship Memory is a datum associated with each Topic that periodically gets the average emotional values of each memory under a Topic weighted by Salience, and also sums up the Salience, and stores those to determine which Topics are most significant and what the general feeling about those topics is.
 
 ### Personality Traits
 
@@ -78,6 +85,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

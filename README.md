@@ -52,10 +52,10 @@ Some Feelings and their general descriptions.
 * Shyness: Produced by various Thoughts. Mainly causes certain actions to play out differently.
 * Romance: Produced by various Thoughts. Generally increases Happiness and motivates Thoughts about the romance
 * Attraction: Produced by various environmental stimuli. Generally motivates Thoughts about the attraction, and thoughts aimed toward acting on the attraction, as well as a general increase in Distraction.
-* Embarrassment: Produced by various Thoughts
-* Awkwardness: Produced by various Thoughts
-* Disgust: Produced by various Thoughts
-* Shame: Produced by various Thoughts
+* Embarrassment: Produced by various Thoughts. Generally decreases Happiness, increases Unwillingness, Awkwardness, and motivates thoughts about avoiding social interaction.
+* Awkwardness: Produced by various Thoughts. Generally increases Distraction, and motivates thoughts about exiting the current situation in some way.
+* Disgust: Produced by various Thoughts. Generally decreases happiness and motivates thoughts of avoidance of the cause(s) of disgust.
+* Shame: Produced by various Thoughts. Generally decreases happiness and increases Embarrassment and motivates thoughts of 
 * 
 * 
 
@@ -80,6 +80,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

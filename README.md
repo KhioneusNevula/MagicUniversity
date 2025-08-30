@@ -99,49 +99,50 @@ All thoughts are generated with randomness and different weights based on person
 * Conversation happened among [T1], [T2]...: Feeling depends on conversation and Traits and Rules and Relatitonship-Memory.
 * [T1] is <status>: Feeling depends on status and Relationship-Memory to [T1] and Traits
 * [T1] is no longer <status>: Feeling depends on status and Relationship-Memory to [T1] and Traits
-* [T1] has <trait (personality or Avatar)>: Feeling depends on trait and Relationship-Memory to [T1] and Traits
-* [T1] no longer has <trait>: Feeling depends on trait and Relationship-Memory to [T1] and Traits
+* [T1]'s <trait (personality or Avatar)> is <value>: Feeling depends on trait and Relationship-Memory to [T1] and Traits
 * [T1] is at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
 * [T1] is no longer at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
 * [T1] is with [T2]: Feeling depends on Rules, Relationship-Memory to [T1] and [T2] and Traits
 * [T1] is no longer with [T2]: Feeling depends on Rules, Relationship-Memory to [T1] and [C2] and Traits
-* [T1] might be lying: Feeling depends on Relationship-Memory to [T1] and Traits
-* [T1] is lying: Feeling depends on Relationship-Memory to [T1] and Traits
-* [T1] is telling the truth: Feeling depends on Relationship-Memory to [T1] and Traits
+* [T1] might be lying: Feeling depends on Relationship-Memory to [T1] and Honesty trait
+* [T1] is lying: Feeling depends on Relationship-Memory to [T1] and Honesty trait
+* [T1] is telling the truth: Feeling depends on Relationship-Memory to [T1] and Honesty trait
 * I care for [T1]: Generates feeling of Care
 * My <need> is satisfied: Generates feeling of Satisfaction
 * My <need> is worsened: Generates feeling of Discontent
 * [A1] is following <rule>: (same)
-* [A1] ignored <rule>: Emotion produced
-* [T1] can ignore <rule>:
-* I must stop following <rule>:
-* I must start following <rule>:
-* [T1] is real:
-* [T1] might be real:
-* [T1] is not real:
-* [T1] knows what [T2] is:
-* [T1] doesn't know what [T2] is:
-* [A1] manifested at [C1]:
-* [A1] vanished from [C1]:
-* [T1] is a figure of authority: Generates deference, depends on Traits
+* [A1] ignored <rule>: Generates Disappointment
+* [T1] can ignore <rule>: No feeling
+* I must stop following <rule>: No feeling
+* I must start following <rule>: Generates minor Stress
+* [T1] is real: Generates Wonder
+* [T1] might be real: No feeling
+* [T1] is not real: Generates Disappointment
+* [T1] knows what [T2] is: No feeling
+* [T1] doesn't know what [T2] is: No feeling
+* I understand [T1]: Generate Satisfaction
+* I do not understand [T1]: Generate Frustration
+* [A1] manifested at [C1]: Feeling depends on relationship to [A1] and [C1]
+* [A1] vanished from [C1]: Feeling depends on relationship to [A1] and [C1]
+* [T1] is a figure of authority: Generates deference, depends on Rebelliousness
 * 
 
 ##### Metathoughts
-* I want [Thought]:
-* [Thought] is necessary:
-* Did [Thought] happen?:
-* Did [Thought] not happen?:
-* I dreamt about [Thought]:
-* I witnessed [Thought]:
-* It is not true that [Thought]:
-* [Thought] is not possible:
-* [A1] told me [Thought]:
+* I want [Thought]: Generates Discontent
+* [Thought] is necessary: Generates more Discontent
+* Did [Thought] happen?: No feeling
+* Did [Thought] not happen?: No feeling
+* I dreamt about [Thought]: Feeling depends on Thought
+* I witnessed [Thought]: Feeling depends on Thought
+* It is not true that [Thought]: Feeling depends on Thought
+* [Thought] is not possible: Feeling depends on Thought
+* [A1] told me [Thought]: Feeling depends on Thought
 * 
 
 ### Rules
 Rules are simplistic relationships that consist of a *Cause* and an *Effect*. The Effect is usually marked with Feelings. Rules indicate the Character's understanding of the world. They may be marked with a *Strength* value, where Stronger Rules will take precedence over weaker Rules if they come in conflict (i.e. are applied to the same situation but the resultant thoughts , though the character will get the thought "I have ignored <rule>" when this happens. Rules can be created and deleted, though they tend to get recreated by the "I must follow <rule>" thought.
 
-The *Probability* score indicates how likely the Cause is to cause the Effect. Furthermore, both the Cause and Effect are structures as Thoughts--although Effect might just be "bad consequences" or "good consequences"
+The *Probability* score indicates how likely the Cause is to cause the Effect. Furthermore, both the Cause and Effect are structures as Thoughts. Effect might be just BAD or GOOD, which is what motivates the "broke rule" and "followed rule" thoughts.
 
 The "Topics" of the Cause and Effect need not be individuals, but can also be *Templates*, which are just marked by logical relations, i.e. and/or/not, and usually encompass what Kind of thing the Topic is, and what Statuses it might have.
 
@@ -150,11 +151,17 @@ The "Topics" of the Cause and Effect need not be individuals, but can also be *T
 #### Dialogue
 Dialogue is a way to convey information or change emotions. *Simple-statements* are small dialogues meant to influence emotions, but which don't convey information, whereas *Info-statements* are dialogues which convey information. Dialogue may be more or less *Comprehensible* depending on a Character's language values.
 
-Dialogue can be held between two or more individuals, and can be held either by directly being in the presence of an individual, or through communicative means.
+Dialogue can convey entirely false info.
+
+Dialogue can be held between two or more individuals, and can be held either by directly being in the presence of an individual, or through communicative means. 
+
+Dialogue can have Feelings encoded in them which are the Feelings that they are spoken with. Other Characters may pick up on those Feelings or not.
 
 Simple-statements include:
-* Compliment <trait (personality or Avatar)>:
-* Insult <trait>:
+* Compliment <trait (personality or Avatar)>: Generates feelings of Happiness, and can create Shyness if Attraction is picked up, as well as increase Attraction
+* Insult <trait>: Generates feelings of Discontent and can produce Anger or Sadness depending on Traits
+* Discuss [T1]: This indicates a discussion of the topic academically. Can create memories of understanding the Topic.
+* 
 * 
 * 
 
@@ -171,10 +178,25 @@ Memories have *Salience* which determines whether they are accessed earlier or l
 Relationship Memory is a datum associated with each Topic that periodically gets the average emotional values of each memory under a Topic weighted by Salience, and also sums up the Salience, and stores those to determine which Topics are most significant and what the general feeling about those topics is.
 
 #### Topics
-*Topics*, as have been discussed multiple times, are other Characters, Objects, or Places. Topic Memory is a collection of Topics the character knows, and also Concepts, which are topics that the Character does not have confirmation of, and which may or may not refer to real things. Concepts are stored as Names initially, indicating a Character knows nothing about them, and then as Concepts with a value of Dubiousness indicating how likely they are to exist. Concepts usually are passed in Culture, and when they are referenced a Character produces a Thought about knowledge about them if they don't know what they are, and a Thought about their realness.
+*Topics*, as have been discussed multiple times, are other Characters, Objects, Groups, Places, or Ideas. Topic Memory is a collection of Topics the character knows, and also 
+
+Concepts, which are topics that the Character does not have confirmation of, and which may or may not refer to real things. Concepts are stored as Names initially, indicating a Character knows nothing about them, and then as Concepts with a value of Dubiousness indicating how likely they are to exist. Concepts usually are passed in Culture, and when they are referenced a Character produces a Thought about knowledge about them if they don't know what they are, and a Thought about their realness.
+
+Ideas are Topics stored like Concepts, but representing academic ideas and skills. "I understand" memories stack up about these to create a "skill level"
 
 ### Personality Traits
+Personality traits govern many statistics about a Character. They can have binary values or 0-100 values.
 
+List:
+* Bashful: Compliments create Shyness, as do some circumstances
+* Fuse (0-100): Sets the likelihood of Frustration creating Anger
+* Empathy (0-100): Sets likelihood of feeling emotions others feel
+* Understanding (0-100): Sets likelihood of "I understand" thoughts
+* Rebelliousness (0-100): Sets likelihood of feeling Deference, and of feeling Contempt
+* Honesty (0-100): Sets likelihood of lying and of creating a Rule that lying is BAD
+* 
+* Identity to <culture> (0-100): Determines connection to the given culture to determine what cultural rules come in
+* Knowledge of <language> (0-100): Knowledge of languages to determine Dialogue comprehensibility.
 
 ## Avatars
 
@@ -189,6 +211,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

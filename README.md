@@ -202,6 +202,9 @@ List:
 
 ### Statuses
 
+## Magic
+The magic system of the game is
+
 ## University
 The University is the setting of the game and has systems that it upholds and which characters interact with.
 ## World
@@ -211,6 +214,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

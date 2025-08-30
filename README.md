@@ -9,7 +9,7 @@ Characters have Avatars, which are their physical presence in the game. Most Ava
 though perhaps a few Characters will have Avatars that do not function like this, e.g. something like a sentient personification of the University's walls, or ghosts.
 
 Characters' minds are composed of Needs, Feelings, Thoughts, Actions, Memories, and Personality Traits. (NFTAMP).
-Personality Traits are created into the Character. Needs are uncreated and change by the Environment. The Environment can produce Thoughts. Needs can produce Feelings. Thoughts can produce Feelings, and Feelings can produce new Thoughts. Thoughts can produce Memories, and Memories can produce Thoughts. Thoughts can produce Actions. Memories can change Personality Traits.
+Personality Traits are created into the Character. Needs are uncreated and change by the Environment. The Environment can produce Thoughts and Feelings. Needs can produce Feelings. Various mental circumstances can produce Feelings. Thoughts can produce Feelings, and Feelings can produce new Thoughts. Thoughts can produce Memories, and Memories can produce Thoughts. Thoughts can produce Actions. Memories can change Personality Traits. 
 
 ### Needs
 Needs are basic inherent things the Character keeps track of and which produce Feelings. They are scalar values from 0 to 100. As they get lower, they increase certain Feelings. Some Needs are listed as Mortal, meaning a Character will prioritize them far more than other Needs. Non-mortal Needs can be affected by Personality Traits, which may decrease or increase their thresholds for making Feelings.
@@ -22,7 +22,7 @@ Some Needs and their general descriptions:
 * Health (Mortal): The need for a Character's Avatar to be unwounded and not sick.
 * Shelter: The need for a Character's Avatar to not be susceptible to the elements.
 * Comfort: The need for a Character's Avatar to be comfortable.
-* Pleasure: The need for a Character's Avatar to be enjoying, in the sense not feeling pain and eating or feeling sensations they like.
+* Contentment: The need for a Character's Avatar to be enjoying, in the sense not feeling pain and eating or feeling sensations they like.
 * Connection: The need for a Character to have social relationships
 * Love: The need for a Character to be loved.
 * Purpose: The need for a Character to understand what they are doing.
@@ -32,6 +32,30 @@ Feelings are basic environmental circumstances in a character that affect how th
 Feelings simply are measurable as scalar values from 0 to 100.
 
 Some Feelings and their general descriptions.
+* Hunger: Correlated with Satiation. Tends to motivate thoughts to eat.
+* Thirst: Correlated with Hydration. Tends to motivate thoughts to drink.
+* Exhaustion: Correlated with Energy. Tends to motivate thoughts to sleep.
+* Discomfort: Correlated with Comfort. Usually creates thoughts that increase emotions like Distraction, and motivates thoughts to increase Comfort
+* Illness: Correlated with Health. Usually creates thoughts that increase emotions like Distraction and Stress, and motivates thoughts to increase Health
+* Pain: Produced by certain environmental health damages. Usually creates Thoughts that decrease emotions like Happiness, increase emotions like Fear, Distraction, Discomfort, and motivates thoughts to decrease pain.
+* Pleasure: Produced by certain environmental stimuli. Usually creates Thoughts that increase emotions like Happiness, and motivates thoughts to derive more pleasure.
+* Happiness: Produced by various Thoughts. Generally decreases Unwillingness and Stress and things associated with this feeling tend to be prioritized.
+* Sadness: Produced by various Thoughts. Generally increases Unwillingness and things associated with this feeling get deprioritized. Also motivates Thoughts to end the sadness.
+* Fear: Produced by various Thoughts. Generally motivates Thoughts of fleeing and avoidance.
+* Guilt: Produced by various Thoughts
+* Anger: Produced by various Thoughts
+* Frustration: Produced by various Thoughts
+* Confusion: Produced by various Thoughts
+* Stress: Produced by various Thoughts
+* Distraction: Produced by various Thoughts
+* Unwillingness: Produced by various Thoughts
+* Shyness: Produced by various Thoughts
+* Romance: Produced by various Thoughts
+* Embarrassment: Produced by various Thoughts
+* Awkwardness: Produced by various Thoughts
+* Disgust: Produced by various Thoughts
+* Shame: Produced by various Thoughts
+* 
 * 
 
 ### Thoughts
@@ -55,5 +79,6 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 

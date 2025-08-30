@@ -53,7 +53,7 @@ Some Feelings and their general descriptions.
 * Distraction: Produced by various Thoughts. Causes Thoughts to get deleted randomly more often.
 * Unwillingness: Produced by various Thoughts. Causes actions to be less likely to be taken.
 * Shyness: Produced by various Thoughts. Mainly causes certain actions to play out differently. Creates visual changes in some facial expressions and such and blushyness(?).
-* Love: Produced by some Thoughts. Generally increases Happiness and motivates Thoughts about doing caring actions toward someone.
+* Care: Produced by some Thoughts. Generally increases Happiness and motivates Thoughts about doing caring actions toward someone.
 * Attraction: Produced by various environmental stimuli. Generally motivates Thoughts about the attraction, and thoughts aimed toward acting on the attraction, as well as a general increase in Distraction. Creates visual changes in blushyness(?)
 * Embarrassment: Produced by various Thoughts. Generally decreases Happiness, increases Unwillingness, Awkwardness, and motivates thoughts about avoiding social interaction. Creates visual changes in blushyness(?). Embarrassment + Frustration creates a pouty facial expression(?)
 * Awkwardness: Produced by various Thoughts. Generally increases Distraction, and motivates thoughts about exiting the current situation in some way. Creates visual changes in some facial expressions
@@ -69,7 +69,7 @@ Some Feelings and their general descriptions.
 ### Thoughts
 Thoughts come in different basic kinds, and they have an associated Feeling (or set thereof) that they are expected to create. They are also temporary, except when they create memories. Thoughts can have Topics, which are Characters and objects. They also have a Timestamp, which is a calendar date they are linked to, and can be marked as Lie if a Character has figured out that someone they're talking to is lying, or as Dubious if they are just suspicious. 
 
-Each thing has theta-roles, i.e. **A**gent, **P**atient, **I**nstrument, **T**heme, and **C**ircumstance. Fundamentally, the Agent causes the action, the Patient is something that changes state by an action or is otherwise acted on, the Instrument is the thing used for an action, the Theme is what an event is "about", and the Circumstance is the place or time or state of an event.
+Each thing has theta-roles, i.e. **A**gent, **P**atient, **I**nstrument, **T**heme, and **C**ircumstance. Fundamentally, the Agent causes the action, the Patient is something that changes state by an action or is otherwise acted on, the Instrument is the thing used for an action, the Theme is what an event is "about", and the Circumstance is the place or time or state of an event. 
 
 Thoughts can also have a *Source* if they are told by someone else. However, the Source may become forgotten.
 
@@ -78,35 +78,33 @@ A *Metathought* is a special kind of Thought that is about another Thought. Meta
 All thoughts are generated with randomness and different weights based on personality traits, but before being deployed in the mind they check conditions to determine if they are appropriate. If not, they are not deployed in the mind.
 
 #### Types of Thoughts
-* [A1] broke [P1]:
-* [A1] fixed [P1]:
-* [T1] feels <emotion>:
-* [T1] is no longer feeling <emotion>:
-* [A1] did <action>:
-* [A1] did <action> to [P1], [P2],...:
-* <Action> happened among [T1], [T2], [T3]...:
-* [A1] did <action> using [I1]:
-* [A1] did <action> using [I1] to [P1], [P2]...:
-* [A1] said <simple-statement> about [T1], [T2]...:
-* Conversation happened among [T1], [T2]...:
-* [T1] is <status>:
-* [T1] is no longer <status>:
-* [T1] has <trait>:
-* [T1] no longer has <trait>:
-* [T1] is at [C1]:
-* [T1] is no longer at [C1]:
-* [T1] is with [T2]:
-* [T1] is no longer with [T2]:
-* [T1] might be lying:
-* [T1] is lying:
-* [T1] is telling the truth:
-* [T1] is loveable:
+* [T1] feels <feeling>: If feelings of Care about this individual are high or the Empathy trait is High, increments the <feeling> in the thought.
+* [T1] is no longer feeling <emotion>: If feelings of Care about this individual are high or the Empathy trait is High, decrements the <feeling> in the thought.
+* [A1] did <action>: Feeling depends on action and Traits
+* [A1] did <action> to [P1], [P2],...: Feeling depends on action and Traits and Rules, and Relationship-Memory to [A1], [P1], [P2]...
+* <Action> happened among [T1], [T2], [T3]...: Feeling depends on action and Traits and Rules and Relationship-Memory
+* [A1] did <action> using [I1]: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
+* [A1] did <action> using [I1] to [P1], [P2]...: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
+* [A1] said <simple-statement> about [T1], [T2]...: Feeling depends on simple-statement and Traits and Rules and Relatitonship-Memory.
+* Conversation happened among [T1], [T2]...: Feeling depends on conversation and Traits and Rules and Relatitonship-Memory.
+* [T1] is <status>: Feeling depends on status and Relationship-Memory to [T1] and Traits
+* [T1] is no longer <status>: Feeling depends on status and Relationship-Memory to [T1] and Traits
+* [T1] has <trait (personality or Avatar)>: Feeling depends on trait and Relationship-Memory to [T1] and Traits
+* [T1] no longer has <trait>: Feeling depends on trait and Relationship-Memory to [T1] and Traits
+* [T1] is at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
+* [T1] is no longer at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
+* [T1] is with [T2]: Feeling depends on Rules, Relationship-Memory to [T1] and [T2] and Traits
+* [T1] is no longer with [T2]: Feeling depends on Rules, Relationship-Memory to [T1] and [C2] and Traits
+* [T1] might be lying: Feeling depends on Relationship-Memory to [T1] and Traits
+* [T1] is lying: Feeling depends on Relationship-Memory to [T1] and Traits
+* [T1] is telling the truth: Feeling depends on Relationship-Memory to [T1] and Traits
+* I care for [T1]: Generates feeling of Care
 * [A1] is satisfying <need>:
 * [A1] is following <rule>:
 * [A1] ignored <rule>:
 * [T1] can ignore <rule>:
 * I must stop following <rule>:
-* I must follow <rule>:
+* I must start following <rule>:
 * [T1] is real:
 * [T1] might be real:
 * [T1] is not real:
@@ -114,7 +112,6 @@ All thoughts are generated with randomness and different weights based on person
 * [T1] doesn't know what [T2] is:
 * [A1] manifested at [C1]:
 * [A1] vanished from [C1]:
-* [T1] 
 * 
 
 ##### Metathoughts
@@ -146,6 +143,7 @@ Dialogue can be held between two or more individuals, and can be held either by 
 Simple-statements include:
 * Compliment <trait (personality or Avatar)>:
 * Insult <trait>:
+* 
 * 
 
 ### Memories
@@ -179,6 +177,7 @@ Furthermore, there will be events in the World. Currently uncertain, but possibi
 * Political events that impact University regulations, funding, and conversations with other Characters about beliefs
 * Maybe even a greater scale plot generation system that can allow for events like Rimworld, and can allow Characters to die and be in danger.
 * Perhaps events that affect the magic system itself.
+
 
 
 

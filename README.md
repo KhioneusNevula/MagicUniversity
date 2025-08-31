@@ -1,4 +1,4 @@
-~~ Magic University (unnamed)
+## Magic University (unnamed)
 
 A dating sim slash fantasy life sim slash procgen dungeon game. we'll see how it goes. kind of like the sims x rimworld x a general dating sim?
 
@@ -83,23 +83,23 @@ A *Metathought* is a special kind of Thought that is about another Thought. Meta
 All thoughts are generated with randomness and different weights based on personality traits, but before being deployed in the mind they check conditions to determine if they are appropriate. If not, they are not deployed in the mind.
 
 #### Types of Thoughts
-* [T1] feels \<feeling>: If feelings of Care about this individual are high or the Empathy trait is High, increments the \<feeling> in the thought. Some feelings will motivate different feelings depending on Cause, e.g. if X feels Contempt and it's caused by something I did, then a feeling of Anger might happen instead.
-* [T1] is no longer feeling \<emotion>: If feelings of Care about this individual are high or the Empathy trait is High, decrements the \<feeling> in the thought.
-* [A1] did \<action>: Feeling depends on action and Traits
-* [A1] did \<action> to [P1], [P2],...: Feeling depends on action and Traits and Rules, and Relationship-Memory to [A1], [P1], [P2]...
-* \<Action> happened among [T1], [T2], [T3]...: Feeling depends on action and Traits and Rules and Relationship-Memory
-* [A1] did \<action> using [I1]: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
-* [A1] did \<action> using [I1] to [P1], [P2]...: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
-* I must do \<action>: Feeling depends on feelings toward Source and action 
-* I must do \<action> to [P1], [P2],...: Same
-* I must do \<action> with [T1], [T2]...: Same
-* I must do \<action> using [I1]: Same
-* I must do \<action> using [I1] to [P1], [P2]...: Same
-* [A1] said \<simple-statement> about [T1], [T2]...: Feeling depends on simple-statement and Traits and Rules and Relatitonship-Memory.
+* [T1] feels (feeling): If feelings of Care about this individual are high or the Empathy trait is High, increments the (feeling) in the thought. Some feelings will motivate different feelings depending on Cause, e.g. if X feels Contempt and it's caused by something I did, then a feeling of Anger might happen instead.
+* [T1] is no longer feeling (emotion): If feelings of Care about this individual are high or the Empathy trait is High, decrements the (feeling) in the thought.
+* [A1] did (action): Feeling depends on action and Traits
+* [A1] did (action) to [P1], [P2],...: Feeling depends on action and Traits and Rules, and Relationship-Memory to [A1], [P1], [P2]...
+* (Action) happened among [T1], [T2], [T3]...: Feeling depends on action and Traits and Rules and Relationship-Memory
+* [A1] did (action) using [I1]: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
+* [A1] did (action) using [I1] to [P1], [P2]...: Feeling depends on action and Traits and Rules and Relatitonship-Memory.
+* I must do (action): Feeling depends on feelings toward Source and action 
+* I must do (action) to [P1], [P2],...: Same
+* I must do (action) with [T1], [T2]...: Same
+* I must do (action) using [I1]: Same
+* I must do (action) using [I1] to [P1], [P2]...: Same
+* [A1] said (simple-statement) about [T1], [T2]...: Feeling depends on simple-statement and Traits and Rules and Relatitonship-Memory.
 * Conversation happened among [T1], [T2]...: Feeling depends on conversation and Traits and Rules and Relatitonship-Memory.
-* [T1] is \<status>: Feeling depends on status and Relationship-Memory to [T1] and Traits
-* [T1] is no longer \<status>: Feeling depends on status and Relationship-Memory to [T1] and Traits
-* [T1]'s \<trait (personality or Avatar)> is \<value>: Feeling depends on trait and Relationship-Memory to [T1] and Traits
+* [T1] is (status): Feeling depends on status and Relationship-Memory to [T1] and Traits
+* [T1] is no longer (status): Feeling depends on status and Relationship-Memory to [T1] and Traits
+* [T1]'s (trait (personality or Avatar)) is (value): Feeling depends on trait and Relationship-Memory to [T1] and Traits
 * [T1] is at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
 * [T1] is no longer at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
 * [T1] is with [T2]: Feeling depends on Rules, Relationship-Memory to [T1] and [T2] and Traits
@@ -108,13 +108,13 @@ All thoughts are generated with randomness and different weights based on person
 * [T1] is lying: Feeling depends on Relationship-Memory to [T1] and Honesty trait
 * [T1] is telling the truth: Feeling depends on Relationship-Memory to [T1] and Honesty trait
 * I care for [T1]: Generates feeling of Care
-* My \<need> is satisfied: Generates feeling of Satisfaction
-* My \<need> is worsened: Generates feeling of Discontent
-* [A1] is following \<rule>: (same)
-* [A1] ignored \<rule>: Generates Disappointment
-* [T1] can ignore \<rule>: No feeling
-* I must stop following \<rule>: No feeling
-* I must start following \<rule>: Generates minor Stress
+* My (need) is satisfied: Generates feeling of Satisfaction
+* My (need) is worsened: Generates feeling of Discontent
+* [A1] is following (rule): (same)
+* [A1] ignored (rule): Generates Disappointment
+* [T1] can ignore (rule): No feeling
+* I must stop following (rule): No feeling
+* I must start following (rule): Generates minor Stress
 * [T1] is real: Generates Wonder
 * [T1] might be real: No feeling
 * [T1] is not real: Generates Disappointment
@@ -140,7 +140,7 @@ All thoughts are generated with randomness and different weights based on person
 * 
 
 ### Rules
-Rules are simplistic relationships that consist of a *Cause* and an *Effect*. The Effect is usually marked with Feelings. Rules indicate the Character's understanding of the world. They may be marked with a *Strength* value, where Stronger Rules will take precedence over weaker Rules if they come in conflict (i.e. are applied to the same situation but the resultant thoughts , though the character will get the thought "I have ignored \<rule>" when this happens. Rules can be created and deleted, though they tend to get recreated by the "I must follow \<rule>" thought.
+Rules are simplistic relationships that consist of a *Cause* and an *Effect*. The Effect is usually marked with Feelings. Rules indicate the Character's understanding of the world. They may be marked with a *Strength* value, where Stronger Rules will take precedence over weaker Rules if they come in conflict (i.e. are applied to the same situation but the resultant thoughts , though the character will get the thought "I have ignored (rule)" when this happens. Rules can be created and deleted, though they tend to get recreated by the "I must follow (rule)" thought.
 
 The *Probability* score indicates how likely the Cause is to cause the Effect. Furthermore, both the Cause and Effect are structures as Thoughts. Effect might be just BAD or GOOD, which is what motivates the "broke rule" and "followed rule" thoughts.
 
@@ -158,8 +158,8 @@ Dialogue can be held between two or more individuals, and can be held either by 
 Dialogue can have Feelings encoded in them which are the Feelings that they are spoken with. Other Characters may pick up on those Feelings or not.
 
 Simple-statements include:
-* Compliment \<trait (personality or Avatar)>: Generates feelings of Happiness, and can create Shyness if Attraction is picked up, as well as increase Attraction
-* Insult \<trait>: Generates feelings of Discontent and can produce Anger or Sadness depending on Traits
+* Compliment (trait (personality or Avatar)): Generates feelings of Happiness, and can create Shyness if Attraction is picked up, as well as increase Attraction
+* Insult (trait): Generates feelings of Discontent and can produce Anger or Sadness depending on Traits
 * Discuss [T1]: This indicates a discussion of the topic academically. Can create memories of understanding the Topic.
 * 
 * 
@@ -195,8 +195,8 @@ List:
 * Rebelliousness (0-100): Sets likelihood of feeling Deference, and of feeling Contempt
 * Honesty (0-100): Sets likelihood of lying and of creating a Rule that lying is BAD
 * 
-* Identity to \<culture> (0-100): Determines connection to the given culture to determine what cultural rules come in
-* Knowledge of \<language> (0-100): Knowledge of languages to determine Dialogue comprehensibility.
+* Identity to (culture) (0-100): Determines connection to the given culture to determine what cultural rules come in
+* Knowledge of (language) (0-100): Knowledge of languages to determine Dialogue comprehensibility.
 
 ## Avatars
 

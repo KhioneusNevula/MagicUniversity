@@ -1,7 +1,5 @@
 package character.traits;
 
-import _utilities.ITrait;
-
 /**
  * A trait of the mind
  * 

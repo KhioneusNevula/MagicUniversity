@@ -2,9 +2,10 @@ package character;
 
 import java.util.Collection;
 
+import avatar.ITraitedObject;
 import character.feelings.IFeeling;
-import character.memories.IMemoriesAndRules;
-import character.thought.IThought;
+import character.memories.storage.IMemoriesAndRules;
+import character.thought.base.IThought;
 import character.traits.IMentalTrait;
 
 /**
@@ -13,7 +14,7 @@ import character.traits.IMentalTrait;
  * @author borah
  *
  */
-public interface ICharacter {
+public interface ICharacter extends ITraitedObject<IMentalTrait> {
 
 	/**
 	 * Return all thoughts this Character is thinking

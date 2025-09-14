@@ -2,7 +2,7 @@ package character.rules;
 
 import java.util.Optional;
 
-import character.thought.IThought;
+import character.thought.base.IThought;
 
 /**
  * Generic consequence ("Good" or "Bad")

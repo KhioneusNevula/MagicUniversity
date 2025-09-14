@@ -1,7 +1,7 @@
 package magic;
 
-import character.targeting.ITopic;
-import character.targeting.IUniqueTopic;
+import character.topic.ITopic;
+import character.topic.IUniqueTopic;
 
 /**
  * A single magical effect

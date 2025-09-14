@@ -4,6 +4,10 @@ import java.util.Collection;
 
 import avatar.IAvatar;
 import magic.ISpell;
+import map.celestial.ICelestialObject;
+import map.celestial.IPhaseCelestialObject;
+import map.season.ISeason;
+import map.weather.IWeatherState;
 
 /**
  * Interface representing the map map itself
@@ -28,11 +32,41 @@ public interface IMap {
 	public Collection<ISpell> getMapSpells();
 
 	/**
+	 * Return the seasonal state
+	 * 
+	 * @return
+	 */
+	public ISeason getSeason();
+
+	/**
 	 * Return the weather state
 	 * 
 	 * @return
 	 */
 	public IWeatherState getWeather();
+
+	/**
+	 * Return all celestial bodies relevant to this map
+	 * 
+	 * @return
+	 */
+	public Collection<ICelestialObject> getCelestialBodies();
+
+	/**
+	 * Returns the point in this celestial body's orbital cycle that it is at
+	 * 
+	 * @param object
+	 * @return
+	 */
+	public long getOrbitPosition(ICelestialObject object);
+
+	/**
+	 * Returns the point in this celestial body's phase cycle that it is at
+	 * 
+	 * @param object
+	 * @return
+	 */
+	public long getPhasePosition(IPhaseCelestialObject object);
 
 	/**
 	 * Whether the given tile is exposed to the weather or not

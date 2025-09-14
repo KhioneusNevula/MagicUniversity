@@ -3,6 +3,7 @@ package character.dialogue;
 import java.util.Collection;
 
 import character.feelings.IFeelingToken;
+import character.topic.ITopic;
 
 /**
  * A simple statement meant to cause a certain emotin
@@ -25,4 +26,5 @@ public interface ISimpleStatement extends IStatement {
 	 * @return
 	 */
 	public Collection<IFeelingToken> intendedFeelings();
+
 }

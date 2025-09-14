@@ -1,8 +1,7 @@
 package avatar.traits;
 
-import java.util.Collection;
-
-import _utilities.ITrait;
+import avatar.parts.IPartKind;
+import character.traits.ITrait;
 
 /**
  * Physical trait of an avatar
@@ -13,13 +12,11 @@ import _utilities.ITrait;
 public interface IPhysicalTrait extends ITrait {
 
 	/**
-	 * Which (binary) traits this trait depends on. E.g. the trait "RedThirdEye"
-	 * depends on the "ThirdEye" trait. If these dependent traits are not present,
-	 * this trait cannot be applied
+	 * If this trait applies to the passed part, return true
 	 * 
 	 * @return
 	 */
-	public Collection<IPhysicalTrait> dependsOnTraits();
+	public boolean appliesToPart(IPartKind part);
 
 	// public ____ overlay()
 

@@ -2,7 +2,7 @@ package character.rules;
 
 import java.util.Optional;
 
-import character.thought.IThought;
+import character.thought.base.IThought;
 
 /**
  * What happens as the result of a rule. Can be either a "Thought" about a

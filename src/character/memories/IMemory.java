@@ -1,6 +1,10 @@
 package character.memories;
 
-import character.thought.IThought;
+import java.util.Collection;
+import java.util.Map;
+
+import character.feelings.IFeeling;
+import character.thought.base.IThought;
 
 /**
  * A single instance of memory
@@ -24,30 +28,31 @@ public interface IMemory extends Comparable<IMemory> {
 	public float truth();
 
 	/**
-	 * How many times this memory is accessed
-	 * 
-	 * @return
-	 */
-	public int accesses();
-
-	/**
-	 * Access the memory
-	 * 
-	 * @return
-	 */
-	public int access();
-
-	/**
-	 * Set accesses to the given number; -1 if the memory is unforgettable?
-	 * 
-	 * @param num
-	 */
-	public void setAccesses(int num);
-
-	/**
 	 * The thought this memory stores
 	 * 
 	 * @return
 	 */
 	public IThought thought();
+
+	/**
+	 * What feelings the thought in this memory generated
+	 * 
+	 * @return
+	 */
+	public Collection<IFeeling> feelings();
+
+	/**
+	 * Map of feelings
+	 * 
+	 * @return
+	 */
+	public Map<IFeeling, Integer> feelingsMap();
+
+	/**
+	 * the strength of the feeling from the thought
+	 * 
+	 * @param feeling
+	 * @return
+	 */
+	public int getFeelingStrength(IFeeling feeling);
 }

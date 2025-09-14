@@ -47,6 +47,7 @@ Some Feelings and their general descriptions.
 * Satisfaction: Produced by various Thoughts. Generally alike to Happiness, but also decreases Frustration, Distraction, and Anger. Topics with this feeling tend to be prioritized in selections.
 * Sadness: Produced by various Thoughts. Generally increases Unwillingness and Topics associated with this feeling get deprioritized. Also motivates Thoughts to end the sadness. Creates visual changes in some facial expressions
 * Fear: Produced by various Thoughts. Generally motivates Thoughts of fleeing and avoidance. Creates visual changes in some facial expressions. Topics with this feeling tend to be physically avoided and deprioritized.
+* Horror: Produced by various thoughts. Generally motivates Stress, Discontent, Distraction, and thoughts of avoidance. Creates visual changes in some facial expressions. Topics with this feeling tend to be physically avoided.
 * Guilt: Produced by various Thoughts. Generally increases varying emotions depending on personality traits, and motivates Thoughts of absolving guilt.
 * Anger: Produced by various Thoughts. Generally motivates Thoughts of acting on the anger. Creates visual changes in some facial expressions. Can motivate thoughts about causing actions that damage or destroy Topics associated with this feeling
 * Frustration: Produced by various Thoughts. Generally motivates Thoughts of stopping actions and increases Anger. Topics with this feeling tend to be deprioritized.
@@ -84,7 +85,6 @@ All thoughts are generated with randomness and different weights based on person
 
 #### Types of Thoughts
 * [T1] feels (feeling): If feelings of Care about this individual are high or the Empathy trait is High, increments the (feeling) in the thought. Some feelings will motivate different feelings depending on Cause, e.g. if X feels Contempt and it's caused by something I did, then a feeling of Anger might happen instead.
-* [T1] is no longer feeling (emotion): If feelings of Care about this individual are high or the Empathy trait is High, decrements the (feeling) in the thought.
 * [A1] did (action): Feeling depends on action and Traits
 * [A1] did (action) to [P1], [P2],...: Feeling depends on action and Traits and Rules, and Relationship-Memory to [A1], [P1], [P2]...
 * (Action) happened among [T1], [T2], [T3]...: Feeling depends on action and Traits and Rules and Relationship-Memory
@@ -95,15 +95,19 @@ All thoughts are generated with randomness and different weights based on person
 * I must do (action) with [T1], [T2]...: Same
 * I must do (action) using [I1]: Same
 * I must do (action) using [I1] to [P1], [P2]...: Same
-* [A1] said (simple-statement) about [T1], [T2]...: Feeling depends on simple-statement and Traits and Rules and Relatitonship-Memory.
-* Conversation happened among [T1], [T2]...: Feeling depends on conversation and Traits and Rules and Relatitonship-Memory.
-* [T1] is (status): Feeling depends on status and Relationship-Memory to [T1] and Traits
-* [T1] is no longer (status): Feeling depends on status and Relationship-Memory to [T1] and Traits
-* [T1]'s (trait (personality or Avatar)) is (value): Feeling depends on trait and Relationship-Memory to [T1] and Traits
+* [A1] said (simple-statement) to [P1], [P2]...: Feeling depends on simple-statement and Traits and Rules and Relatitonship-Memory.
+* [A1] is (status): Feeling depends on status and Relationship-Memory to [T1] and Traits
+* [A1] has (status) on (part_slot): Feeling depends on status, part, and Relationship-Memory to [T1] and Traits
+* [A1] has (apparel) on (part_slot): Feeling depends
+* [A1] is holding (P1) on (inventory_slot): Feeling depends
+* [A1] is holding nothing on (inventory_slot): Feeling depends
+* [A1] has no apparel on (part_slot): Feeling depends on Traits
+* [A1]'s (trait (personality or Avatar)) is (value): Feeling depends on trait and Relationship-Memory to [T1] and Traits
+* [A1] is of size (value): No feeling
+* [T1] has (part): No feeling
+* [T1] is missing (part slot): Feeling may be Horror
 * [T1] is at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
-* [T1] is no longer at [C1]: Feeling depends on Rules, Relationship-Memory to [T1] and [C1] and Traits
 * [T1] is with [T2]: Feeling depends on Rules, Relationship-Memory to [T1] and [T2] and Traits
-* [T1] is no longer with [T2]: Feeling depends on Rules, Relationship-Memory to [T1] and [C2] and Traits
 * [T1] might be lying: Feeling depends on Relationship-Memory to [T1] and Honesty trait
 * [T1] is lying: Feeling depends on Relationship-Memory to [T1] and Honesty trait
 * [T1] is telling the truth: Feeling depends on Relationship-Memory to [T1] and Honesty trait
@@ -125,9 +129,14 @@ All thoughts are generated with randomness and different weights based on person
 * [A1] manifested at [C1]: Feeling depends on relationship to [A1] and [C1]
 * [A1] vanished from [C1]: Feeling depends on relationship to [A1] and [C1]
 * [T1] is a figure of authority: Generates deference, depends on Rebelliousness
+* The weather is (weather): No feeling
+* [T1] is (celestial state): No feeling
+* The season is (season): No feeling
 * 
 
 ##### Metathoughts
+* [Thought] is no longer true: Feeling depends on thought
+* [A1] prevented [Thought]: Feeling depends on [Thought]
 * I want [Thought]: Generates Discontent
 * [Thought] is necessary: Generates more Discontent
 * Did [Thought] happen?: No feeling
@@ -136,7 +145,8 @@ All thoughts are generated with randomness and different weights based on person
 * I witnessed [Thought]: Feeling depends on Thought
 * It is not true that [Thought]: Feeling depends on Thought
 * [Thought] is not possible: Feeling depends on Thought
-* [A1] told me [Thought]: Feeling depends on Thought
+* [A1], [A2]... told [Thought] to [P1], [P2]...: Feeling depends on Thought
+* I must tell [Thought] to [T1], [T2]...: No feeling
 * 
 
 ### Rules

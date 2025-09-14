@@ -1,12 +1,12 @@
 package character.rules;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import character.targeting.ITopic;
-import character.thought.IThought;
-import character.thought.IThoughtArgument;
 import character.thought.ThetaRole;
+import character.thought.base.IThought;
+import character.topic.ITopic;
 
 /**
  * A Rule that indicates the outcome of something or forbids/allows an action
@@ -14,13 +14,21 @@ import character.thought.ThetaRole;
  * @author borah
  *
  */
-public interface IRule extends IThoughtArgument {
+public interface IRule {
 	/**
 	 * The {@link IThought} that acts as the Cause for this {@link IRule}
 	 * 
 	 * @return
 	 */
 	public IThought cause();
+
+	/**
+	 * An optional set of extra thoughts that act as circumstances for this rule to
+	 * occur in
+	 * 
+	 * @return
+	 */
+	public Collection<IThought> circumstances();
 
 	/**
 	 * The result of this Rule's cause occurring
@@ -30,12 +38,19 @@ public interface IRule extends IThoughtArgument {
 	public IConsequence effect();
 
 	/**
-	 * Return true if this rule's cause matches the given thought
+	 * The result of this Rule's cause NOT occurring
+	 * 
+	 * @return
+	 */
+	public IConsequence violationEffect();
+
+	/**
+	 * Return true if this rule matches the thoughts in the mind
 	 * 
 	 * @param thought
 	 * @return
 	 */
-	public default boolean matchesThought(IThought thought) {
+	public default boolean matchesThoughts(IThought thought) {
 		return match(this.cause(), thought);
 	}
 
@@ -47,6 +62,9 @@ public interface IRule extends IThoughtArgument {
 	 * @return
 	 */
 	public static boolean match(IThought rule, IThought thought) {
+		if (!rule.isTemplateForRule() || thought.isTemplateForRule()) {
+			throw new IllegalArgumentException();
+		}
 		for (ThetaRole theta : ThetaRole.values()) {
 			Set<ITopic> checkedTopics = new HashSet<>(thought.allTopics().size()); // topics already checked
 			rule_role_loop: for (ITopic ruleRole : rule.topicsForThetaRole(theta)) {

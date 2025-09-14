@@ -1,6 +1,6 @@
 package character.dialogue;
 
-import character.thought.IThought;
+import character.thought.base.IThought;
 
 /**
  * A statement conveying info

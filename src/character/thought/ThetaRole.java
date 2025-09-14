@@ -1,7 +1,9 @@
 package character.thought;
 
 /**
- * Roles that Topics can take in an interaction
+ * Roles that Topics can take in an interaction.
+ * 
+ * *Not fully equivalent to linguistic theta-roles.
  * 
  * @author borah
  *
@@ -11,10 +13,10 @@ public enum ThetaRole {
 	AGENT,
 	/** Only applies to metathoughts; indicates who experienced the metathought */
 	EXPERIENCER,
-	/** General undergoer of an event */
-	THEME,
-	/** Undergoer of an action done by someone else */
+	/** Undergoer of an action or change */
 	PATIENT,
+	/** Topic of a conversation */
+	THEME,
 	/** Used to complete an action */
 	INSTRUMENT,
 	/** Location of an action or something similar */

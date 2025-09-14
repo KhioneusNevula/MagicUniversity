@@ -1,13 +1,19 @@
 package avatar.statuses;
 
-import character.thought.IThoughtArgument;
+import com.google.common.collect.Range;
 
 /**
- * the type of a status
+ * A description of the nature of a status.
  * 
  * @author borah
  *
  */
-public interface IStatusType extends IThoughtArgument {
+public interface IStatusType {
 
+	/**
+	 * Range of strengths a status can have
+	 * 
+	 * @return
+	 */
+	public Range<Integer> strengthRange();
 }
